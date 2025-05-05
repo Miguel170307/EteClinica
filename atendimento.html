@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Atendimento</title>
+        <link rel="stylesheet" href="tela.css">
+        <link rel="shortcut icon" type="image/jpg" href="logo clinica.png"/>
+    </head>
+    <body>
+        
+        <div class="cabeca">
+        
+            <img src="logo clinica.png" class="icon">
+            <h1>Clínica Médica</h1>
+            <ul class="um">
+                <li><a class="tres" href="tela.html" target="_blank">Voltar</a></li>
+                
+            </ul>
+            <h3>Atendimento</h3>
+        </div>
+        <div class="formu">
+        <form method="POST" action="atendimento.php">
+            
+            <label>Idade:</label>
+            <br>
+            <input name="years" type="number">
+            <br><br>
+
+            <label>Possui convênio médico?:</label>
+            <br>
+            <select name="doc" type="text">
+            <option value="Sim">Sim</option>
+            <option value="Nao">Não</option>
+            </select>
+            <br><br>
+ 
+            <button>Enviar</button>
+        </form>
+    </div>
+    </body>
+</html>
