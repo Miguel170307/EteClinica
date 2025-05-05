@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Agendamento</title>
+        <link rel="stylesheet" href="tela.css">
+        <link rel="shortcut icon" type="image/jpg" href="logo clinica.png"/>
+    </head>
+    <body>
+        
+        <div class="cabeca">
+        
+            <img src="logo clinica.png" class="icon">
+            <h1>Clínica Médica</h1>
+            <ul class="um">
+                <li><a class="tres" href="tela.html" target="_blank">Voltar</a></li>
+                
+            </ul>
+            <h3>Agendamento</h3>
+        </div>
+        <form method="POST" action="agendamento.php">
+            <label>Data da consulta:</label>
+            <br>
+            <input name="data" type="date">
+            <br><br>
+ 
+            <label>Hora e Minuto:</label>
+            <br>
+            <input name="hm" type="datetime"> 
+            <br><br>
+
+            <label>Tipo de Consulta:</label>
+            <br>
+            <select name="tp" type="text">
+            <option value="Geral">Clínica Geral</option>
+            <option value="esp">Especialista</option>
+            </select>
+            <br><br>
+ 
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
